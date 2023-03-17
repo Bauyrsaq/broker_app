@@ -8,7 +8,7 @@ class Currency(Base):
 
     currency_id = Column("currency_id", String(3), primary_key=True)
     title = Column(String(128), nullable=False)
-    symbol = Column(String(3), nullable=True)
+    symbol = Column(String(5), nullable=True)
 
     def __init__(self, title, currency_id, symbol):
         self.title = title

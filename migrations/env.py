@@ -6,6 +6,8 @@ from sqlalchemy import pool
 from alembic import context
 
 from currencies.entities import Currency, Base
+from exchanges.entities import Exchange
+from symbols.entities import Symbol
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
